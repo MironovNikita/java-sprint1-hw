@@ -83,15 +83,15 @@ public class StepTracker {
         //Использовал int, т.к. шаги нужно считать целыми (324,9843 шага - неподходящий формат для измерения именно шагов)
     }
 
-    //Лучшая серия (количество подряд идущих дней, когда кол-во шагов было больше целевого)
+    //Лучшая серия (количество подряд идущих дней, когда кол-во шагов было больше или больше и равно целевого)
     int bestSeries (int month) {
         int best = 0;       //Для сохранения лучшего значения серий по итогу всего месяца
         int secondBest = 0; //Для сохранения значения текущей серии
         for(int i = 0; i < monthToData[month].monthDays.length; i++) {
-            if(monthToData[month].monthDays[i] > stepAim) {
+            if(monthToData[month].monthDays[i] >= stepAim) {
                 secondBest++;
                 if(i != (monthToData[month].monthDays.length - 1)) {
-                    if (monthToData[month].monthDays[i + 1] > stepAim) continue;
+                    if (monthToData[month].monthDays[i + 1] >= stepAim) continue;
                     else {
                         if (secondBest > best) best = secondBest;
                         secondBest = 0;

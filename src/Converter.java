@@ -8,13 +8,11 @@ public class Converter {
 
     //Перевод шагов в километры
     float countDistance (int steps) {
-        float kilometers = (steps * distance)/100_000f;
-        return kilometers;
+        return (steps * distance)/100_000f;
     }
 
     //Перевод шагов в потраченные килокалории
     float countKilocalories (int steps) {
-        float calories = (steps * kilocalories)/1_000;
-        return calories;
+        return (steps * kilocalories)/1_000f;
     }
 }
