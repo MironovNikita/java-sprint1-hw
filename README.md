@@ -14,7 +14,7 @@
 Также в приложении можно задавать цель по количеству шагов в день.
 ## Screenshots
 
-![alt text](https://github.com/MironovNikita/java-sprint1-hw/java-sprin1-hw.png?raw=true)
+![alt text](https://github.com/MironovNikita/java-sprint1-hw/blob/main/java-sprint1-hw.png)
 
 
 ## 🚀 Обо мне
